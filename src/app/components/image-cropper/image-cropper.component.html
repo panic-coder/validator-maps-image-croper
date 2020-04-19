@@ -1,0 +1,16 @@
+<div class="card-div" fxLayout="row" fxLayoutAlign="center start">
+    <mat-card class="example-card">
+      <mat-card-header fxLayout="row" fxLayoutAlign="start center" class="header">
+        Image Cropper
+      </mat-card-header>
+      
+      <mat-card-content *ngIf="showImage" fxLayout="row" fxLayoutAlign="center center">
+        <img [src]="imageData" alt="">
+      </mat-card-content>
+  
+      <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button mat-raised-button (click)="openDialog()">Select Image</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
